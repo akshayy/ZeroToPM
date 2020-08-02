@@ -4,13 +4,27 @@ layout: compress
 <!DOCTYPE html>
 <html lang="en" class="no-js">
 <head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WTN2TRH');</script>
+<!-- End Google Tag Manager -->
     <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{{ site.title }}</title>
+    <title>Zero To PM</title>
     <meta name="description" content="{{ site.description }}"/>
     <meta name="keywords" content="{{ site.keywords }}"/>
     <meta name="author" content="{{ site.author }}"/>
+
+    <meta property="og:url"           content="https://www.your-domain.com/your-page.html" />
+    <meta property="og:type"          content="website" />
+    <meta property="og:title"         content="Zero To PM" />
+    <meta property="og:description"   content="{{ site.description }}" />
+    <meta property="og:image"         content="https://i.imgur.com/ISgjC0p.png" />
+
     <link rel="shortcut icon" href="img/favicon.ico">
     <link rel="stylesheet" type="text/css" href="css/normalize.css"/>
     <link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css"/>
@@ -27,161 +41,180 @@ layout: compress
     </script>
 </head>
 <body class="body">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WTN2TRH"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 <div class="container">
     <header class="header">
-       <div class="align-inner">								
+       <div class="align-inner">
+	  <a href="/" style="outline:0!important;">								
 	  <div style="height: 75px;width: 35px;float: left;">
 	     <img src="https://i.imgur.com/GGDhY2j.png" style="height: 75px;">
 	  </div>
-	  <h1 class="hero-subheader__title" style="height: 75px;margin-bottom: 0px;padding-top: 40px;font-size: 2em;">Zero To PM</h1>
-	  <p class="hero-subheader__desc">A curated list of the best product management resources - articles, videos, twitter threads, webinars, courses etc.<br>Are you a product enthusiast wanting to get into Product Management or simply need a refresher? This is your place to be... </p>
-
+	  <h1 class="hero-subheader__title" style="height: 75px;margin-bottom: 0px;padding-top: 40px;font-size: 2em;">Zero To PM</h1></a>
+	  <p class="hero-subheader__desc">A curated library of 150+ links to product management related resources - articles, videos, twitter threads, webinars etc.<br>Are you a product enthusiast wanting to get into Product Management or simply need a refresher? This is your place to be... </p>
 	</div>
+	<div id="social-media-btns">
+		<a id="view-about-section" class="header-link" href="#about-section" style="margin-right: 20px;">About</a>
+
+		<i href="#" class="fa fa-lightbulb-o" style="font-size: 1.5em;color: #6c62ff;"></i>
+		<a id="suggest-resource" class="header-link" href="/suggest" target="_blank" style="margin-right: 20px;margin-left: -5px;">Suggest a resource</a>
+
+    		<a id="facebook-share" href="javascript:;" onclick="facebookShare();" class="fa fa-facebook"></a>
+		<a id="twitter-share" href="javascript:;" onclick="twitterShare();" class="fa fa-twitter"></a>
+	        <!--<a id="whatsapp-share" href="#" class="fa fa-whatsapp"></a>-->
+</div>
     </header>
     <div class="content">
         <!-- trianglify pattern container -->
         <div class="pattern pattern--hidden"></div>
         <!-- cards -->
         <div class="wrapper">
+   		<div class="card">
+		    <div class="card-title" style="background: linear-gradient(to right, #6c62ff 0%, #6c62ff70 100%);"> Product Management 101: The Basics </div>
+		    <div class="card-description"> In a nutshell, product management is that interdisciplinary function in an organization that is responsible for ensuring that the organization builds products that solve real customer problems with solutions that fit within the organization's strategy thus helping increase profitability.
+			<div class='one-liner'>
+			Here is a bunch of resources that will help you understand in detail what the Product Management function encompasses -</div>
+	 	    </div>
+      		    <div class="card-link-container"> <a class="card-link" href="javascript:;" id="pm-intro-view" onclick="showAirtable('#pm-intro-airtable')">View resources <span class="card-arrow">🠖</span> </a> 
+		    </div>
+		    <div class="airtable-iframe" style="display:none;" id="pm-intro-airtable"><iframe class="airtable-embed" src="https://airtable.com/embed/shrxDR7WLslwUurIf?backgroundColor=yellow" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe></div>
+   		</div>
 
-            <div class="card"  >
-                <div class="card__container card__container--closed" style="padding:10px 5px 10px 5px">
-                    
-                    <div class="card__content" style="background:url('https://i.imgur.com/m4vVOYh.png') no-repeat;">
-                       
-                    </div>
-		    <div class="card__caption">
-                            <h2 class="card__title">Product Management 101</h2>
-                        </div>
-                </div>
-            </div>
-	    <div class="card"  >
-                <div class="card__container card__container--closed" style="padding:10px 5px 10px 5px">
-                    
-                    <div class="card__content" style="background:url('https://i.imgur.com/0ZPV7MI.png') no-repeat;">
-                       
-                    </div>
-		    <div class="card__caption">
-                            <h2 class="card__title">Customer Development</h2>
-                        </div>
-                </div>
-            </div>
-<div class="card"  >
-                <div class="card__container card__container--closed" style="padding:10px 5px 10px 5px">
-                    
-                    <div class="card__content" style="background:url('https://i.imgur.com/OK9iPFs.png') no-repeat;">
-                       
-                    </div>
-		    <div class="card__caption">
-                            <h2 class="card__title">Minimum Viable Product (MVP)</h2>
-                        </div>
-                </div>
-            </div>
-<div class="card"  >
-                <div class="card__container card__container--closed" style="padding:10px 5px 10px 5px">
-                    
-                    <div class="card__content" style="background:url('https://i.imgur.com/U0EBnmh.png') no-repeat;">
-                       
-                    </div>
-		    <div class="card__caption">
-                            <h2 class="card__title">Product Market Fit (PMF)</h2>
-                        </div>
-                </div>
-            </div>
-<div class="card"  >
-                <div class="card__container card__container--closed" style="padding:10px 5px 10px 5px">
-                    
-                    <div class="card__content" style="background:url('https://i.imgur.com/m4vVOYh.png') no-repeat;">
-                       
-                    </div>
-		    <div class="card__caption">
-                            <h2 class="card__title">Roadmaps</h2>
-                        </div>
-                </div>
-            </div>
-<div class="card"  >
-                <div class="card__container card__container--closed" style="padding:10px 5px 10px 5px">
-                    
-                    <div class="card__content" style="background:url('https://i.imgur.com/m4vVOYh.png') no-repeat;">
-                       
-                    </div>
-		    <div class="card__caption">
-                            <h2 class="card__title">Pricing Strategy</h2>
-                        </div>
-                </div>
-            </div>
-<div class="card"  >
-                <div class="card__container card__container--closed" style="padding:10px 5px 10px 5px">
-                    
-                    <div class="card__content" style="background:url('https://i.imgur.com/m4vVOYh.png') no-repeat;">
-                       
-                    </div>
-		    <div class="card__caption">
-                            <h2 class="card__title">Product and Go-To-Market Strategy</h2>
-                        </div>
-                </div>
-            </div>
-<div class="card"  >
-                <div class="card__container card__container--closed" style="padding:10px 5px 10px 5px">
-                    
-                    <div class="card__content" style="background:url('https://i.imgur.com/m4vVOYh.png') no-repeat;">
-                       
-                    </div>
-		    <div class="card__caption">
-                            <h2 class="card__title">Product Launch</h2>
-                        </div>
-                </div>
-            </div>
-<div class="card"  >
-                <div class="card__container card__container--closed" style="padding:10px 5px 10px 5px">
-                    
-                    <div class="card__content" style="background:url('https://i.imgur.com/m4vVOYh.png') no-repeat;">
-                       
-                    </div>
-		    <div class="card__caption">
-                            <h2 class="card__title">Product Analytics</h2>
-                        </div>
-                </div>
-            </div>
-<div class="card"  >
-                <div class="card__container card__container--closed" style="padding:10px 5px 10px 5px">
-                    
-                    <div class="card__content" style="background:url('https://i.imgur.com/m4vVOYh.png') no-repeat;">
-                       
-                    </div>
-		    <div class="card__caption">
-                            <h2 class="card__title">10X Product Manager</h2>
-                        </div>
-                </div>
-            </div>
-<div class="card"  >
-                <div class="card__container card__container--closed" style="padding:10px 5px 10px 5px">
-                    
-                    <div class="card__content" style="background:url('https://i.imgur.com/m4vVOYh.png') no-repeat;">
-                       
-                    </div>
-		    <div class="card__caption">
-                            <h2 class="card__title">Product Management Courses</h2>
-                        </div>
-                </div>
-            </div>
-<div class="card"  >
-                <div class="card__container card__container--closed" style="padding:10px 5px 10px 5px">
-                    
-                    <div class="card__content" style="background:url('https://i.imgur.com/m4vVOYh.png') no-repeat;">
-                       
-                    </div>
-		    <div class="card__caption">
-                            <h2 class="card__title">Amazing Product Leaders to Follow</h2>
-                        </div>
-                </div>
-            </div>
+   		<div class="card">
+      		    <div class="card-title" style="background: linear-gradient(to right, #5a5968 0%, #5a59689e 100%);"> Minimum Viable Product - MVP </div>
+      		    <div class="card-description"> Minimum Viable Product is a concept popularized by Eric Ries of The Lean Startup that implies the simplest usable version of the product that has just enough features to satisfy customer needs and collect valuable feedback from early customers with the least amount of effort.<div class='one-liner'>
+Take a deep dive into the nuances of Minimum Viable Product with great resources by product leaders here -</div> </div>
+      		    <div class="card-link-container"> <a class="card-link" id="mvp-view" href="javascript:;" onclick="showAirtable('#mvp-airtable')">View resources <span class="card-arrow">🠖</span> </a> 			    </div>
+		    <div class="airtable-iframe" style="display:none" id="mvp-airtable"><iframe class="airtable-embed" src="https://airtable.com/embed/shrF7zTAVB25qMrOV?backgroundColor=yellow" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe></div>
+   		</div>
 
-            <!-- /cards -->
-        </div>
+		<div class="card">
+		    <div class="card-title" style="background: linear-gradient(to right, #6c62ff 0%, #6c62ff70 100%);"> Product Market Fit - PMF </div>
+		    <div class="card-description"> Marc Andreesen defines Product Market Fit as "Being in a good market with a product that can satisfy the needs of the market". Achieving PMF is like getting a thumbs-up from your customers. It is the stage where you've identified the target customer and have the right product to serve their needs.<div class='one-liner'>
+Here is a collection of the best resources on the ever elusive PMF and how to achieve/measure it -</div> 
+	 	    </div>
+      		    <div class="card-link-container"> <a class="card-link" id="pmf-view" href="javascript:;" onclick="showAirtable('#pmf-airtable')">View resources <span class="card-arrow">🠖</span> </a> 
+		    </div>
+		    <div class="airtable-iframe" style="display:none" id="pmf-airtable"><iframe class="airtable-embed" src="https://airtable.com/embed/shr2C2y8ogZKSJhpa?backgroundColor=yellow" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe></div>
+   		</div>
+
+   		<div class="card">
+      		    <div class="card-title" style="background: linear-gradient(to right, #5a5968 0%, #5a59689e 100%);"> Market Research & Customer Development </div>
+      		    <div class="card-description"> Market Research is a deliberate attempt to learn more about the target customers, assess the size of the market and identify viable business opportunities. Customer development is an approach focused on identifying the pain points and problems of your target market.<div class='one-liner'> Here is a collection of articles and videos to help you understand market sizing and customer development methods -</div>
+			</div>
+      		    <div class="card-link-container"> <a class="card-link" id="mrandcd-view" href="javascript:;" onclick="showAirtable('#mrandcd-airtable')">View resources <span class="card-arrow">🠖</span> </a> </div>
+		    <div class="airtable-iframe" style="display:none" id="mrandcd-airtable"><iframe class="airtable-embed" src="https://airtable.com/embed/shrzG0PuVYENxPrAw?backgroundColor=yellow" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe></div>
+   		</div>		
+
+		<div class="card">
+		    <div class="card-title" style="background: linear-gradient(to right, #6c62ff 0%, #6c62ff70 100%);"> Product Pricing Strategy </div>
+		    <div class="card-description"> An important part of the product strategy, a good pricing strategy secures profitability and business success.Get it wrong and run into the risk of permanenty damaging your product's and business's reputation.<div class='one-liner'>
+			Get your product pricing right by learning the nuances of pricing using these resources -</div> 
+	 	    </div>
+      		    <div class="card-link-container"> <a class="card-link" id="pricing-view" href="javascript:;" onclick="showAirtable('#pricing-airtable')">View resources <span class="card-arrow">🠖</span> </a> 
+		    </div>
+		    <div class="airtable-iframe" style="display:none" id="pricing-airtable"><iframe class="airtable-embed" src="https://airtable.com/embed/shrYsk7olycinIgyW?backgroundColor=yellow" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe></div>
+   		</div>
+
+   		<div class="card">
+      		    <div class="card-title" style="background: linear-gradient(to right, #5a5968 0%, #5a59689e 100%);"> Product Strategy & Go-To-Market Strategy </div>
+      		    <div class="card-description"> Product strategy is a high level vision of what a business hopes to achieve with its products and how it plans to do so. It describes how and who the product will create a value for and benefit the business at the same time. Go-To-Market strategy is the plan of activities that need to be completed to bring a product to your target market in a way that it achieves maximum impact.<div class='one-liner'> Refer to these resources to understand the importance of a winning product strategy and GTM strategy -</div>
+						
+		   </div>
+      		    <div class="card-link-container"> <a class="card-link" id="strategy-view" href="javascript:;" onclick="showAirtable('#strategy-airtable')">View resources <span class="card-arrow">🠖</span> </a> </div>
+		    <div class="airtable-iframe" style="display:none" id="strategy-airtable"><iframe class="airtable-embed" src="https://airtable.com/embed/shrfkgFER16f1zbPW?backgroundColor=yellow" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe></div>
+   		</div>
+
+		<div class="card">
+		    <div class="card-title" style="background: linear-gradient(to right, #6c62ff 0%, #6c62ff70 100%);"> Roadmaps & Prioritization </div>
+		    <div class="card-description"> A product roadmap is a plan for executing your product strategy.It describes the efforts and timeline for the features and enhancements that align with your strategy and are going to help you achieve your business objectives.
+			<div class='one-liner'>Up your roadmapping game with these knowledge mine of roadmapping techniques from amazing product leaders -</div>
+	 	    </div>
+      		    <div class="card-link-container"> <a class="card-link" id="roadmaps-view" href="javascript:;" onclick="showAirtable('#roadmaps-airtable')">View resources <span class="card-arrow">🠖</span> </a> 
+		    </div>
+		    <div class="airtable-iframe" style="display:none" id="roadmaps-airtable"><iframe class="airtable-embed" src="https://airtable.com/embed/shrSDSSqNssMtATAU?backgroundColor=yellow" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe></div>
+   		</div>
+
+   		<div class="card">
+      		    <div class="card-title" style="background: linear-gradient(to right, #5a5968 0%, #5a59689e 100%);"> Product Metrics </div>
+      		    <div class="card-description">
+			Tracking the right product metrics is crucial to improving the product and fueling innovation. Product Metrics are key data points that help businesses track and evaluate the success of the products.<div class='one-liner'>Use these resources to help you decide what product metrics are and which ones are most important for your product and business -</div>
+		    </div>
+      		    
+		    <div class="card-link-container"> <a class="card-link" id="metrics-view" href="javascript:;" onclick="showAirtable('#metrics-airtable')">View resources <span class="card-arrow">🠖</span> </a> </div>
+	    		<div class="airtable-iframe" style="display:none" id="metrics-airtable"><iframe class="airtable-embed" src="https://airtable.com/embed/shrHjhzf8jkqOLvDF?backgroundColor=yellow" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe></div>
+   		</div>
+
+		<div class="card">
+		    <div class="card-title" style="background: linear-gradient(to right, #6c62ff 0%, #6c62ff70 100%);"> Becoming a Product Leader </div>
+		    <div class="card-description"> The best PMs - or 10x PMs - don't simply deliver features and enhancements. They act as Product Leaders . Product Leaders are not only focused on high leverage activities but also enable others to identify and work on high leverage activities in their respective roles thus maximizing the impact to company/product mission.<div class='one-liner'>
+		    Here are some resources to help you up your ante in your product management career -</div>
+	 	    </div>
+      		    <div class="card-link-container"> <a class="card-link" id="peakpm-view" href="javascript:;" onclick="showAirtable('#peakpm-airtable')">View resources <span class="card-arrow">🠖</span> </a> 
+		    </div>
+		    <div class="airtable-iframe" style="display:none" id="peakpm-airtable"><iframe class="airtable-embed" src="https://airtable.com/embed/shrP3xrjIG9EWBOLt?backgroundColor=yellow" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe></div> 	
+   		</div>
+
+   		<div class="card">
+      		    <div class="card-title" style="background: linear-gradient(to right, #5a5968 0%, #5a59689e 100%);"> Product Leaders to follow </div>
+      		    <div class="card-description"> There are amazing product leaders who share their product management experiences and learnings on Twitter. Following them is a great way to learn from their experiences and become acquainted with their perspectives and product mindset.<div class='one-liner'>
+	Follow these product folks on Twitter and stay up-to-date with amazing product management related content -</div>
+</div>
+      		    <div class="card-link-container"> <a class="card-link" id="twitterprofiles-view" href="javascript:;" onclick="showAirtable('#twitter-airtable')">Recommended folks to follow on Twitter<span class="card-arrow">🠖</span> </a> </div>
+			<div class="airtable-iframe" style="display:none" id="twitter-airtable"><iframe class="airtable-embed" src="https://airtable.com/embed/shrqdKYbZoagGmE7Z?backgroundColor=yellow" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe></div>
+   		</div>
+   		
+		
+	</div>
+        <!-- /cards -->
+        
     </div>
+
+    <footer class="footer" style="background: white;">
+    <div class="align-inner-footer">    
+      <div id="about-section" style="padding: 10px 0px;">
+        <h3 style="font-weight: 500;">About Zero To PM | Who made it ?</h3>
+      </div>
+      <div style="padding-bottom: 20px;">
+	My name is Akshay Deshmukh. I'm a product enthusiast currently hooked to upskilling my knowledge about product management.
+	<br> <br>
+A few years ago, when I transitioned into product management, I did not have a clear understanding of what product management encompasses and heavily relied on PM resources online where I kept hopping from one article to another. Zero To PM has been built to solve this problem.
+<br>
+<br>
+<b>Zero To PM</b> is a curated library of 150+ content resources - <u>articles, videos, twitter threads, webinars</u> etc organized by the key topics that make up product management. Zero To PM aims at providing a structure to your pursuit of becoming a better Product Manager. 
+<br>
+<br>
+<a class="card-link" href="https://twitter.com/ak_kshay" target="_blank">Follow me (@ak_kshay) on twitter</a> where I tweet about about insightful nuggets of knowledge derived from these amazing resources.
+</div> 
+</div>
+    </footer>
+<div style="text-align: center;padding: 10px 0px;font-size: 14px;">Made with <i class="fa fa-heart" aria-hidden="true" style="color: #00800075;
+"></i>
+ at Pune, India</div>	
     <!-- /container -->
 </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript">
+function showAirtable(element){
+$('.airtable-iframe').slideUp();
+if(!$(element).is(':visible')){
+$(element).slideDown();}
+}
+
+facebookShare = function(){
+    url = 'https://work.facebook.com/sharer.php?display=popup&u=' + window.location.href;
+    options = 'toolbar=0,status=0,resizable=1,width=626,height=436';
+    window.open(url,'sharer',options);
+}
+
+twitterShare = function(){
+    url = 'https://twitter.com/intent/tweet?url=https%3A%2F%2Fzerotopm.info&text=To%20all%20the%20product%20enthusiasts%20out%20there%2C%20check%20out%20Zero%20To%20PM%20-%20a%20curated%20library%20of%20150+%20PM%20related%20content%20items%20by%20@ak_kshay&hashtags=prodmgmt%2Cproductmanagers';
+    window.open(url); 
+}
+
+</script>
 <!-- JS 
 <script src="js/vendors/trianglify.min.js"></script>
 <script src="js/vendors/TweenMax.min.js"></script>
@@ -190,5 +223,6 @@ layout: compress
 <script src="js/card-modern-blog.js"></script>
 <script src="js/modern-blog.js"></script>
 -->
+
 </body>
 </html>

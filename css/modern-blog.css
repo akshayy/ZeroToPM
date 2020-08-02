@@ -7,17 +7,90 @@
     margin-top: -25px;
 }
 
-
-.card {
-	position: relative;
-	float: left;
-	width: 21%;
-	height: 250px;
-	margin: 2%;
-	background:#E8F2FC;
-	height:19.3vw;border-radius:10px;box-shadow:0 5px 10px 0 rgba(0, 0, 0, 0.35)
+.align-inner-footer{
+    width: 75%;
+    margin: 0 auto;
 }
 
+
+.card {
+	float: left;
+	width: 100%;
+	background:white;
+	margin-bottom:25px;
+	box-shadow:0 5px 10px 0 rgba(0, 0, 0, 0.35);
+}
+
+.card-title{
+	padding: 20px;border-radius: 3px;vertical-align: middle;background: #E8F2FC;font-size: 18px;color:white;
+}
+
+.card-description{
+	padding:20px;padding-bottom:10px;font-size:15px;
+}
+
+.one-liner{
+	margin-top:10px;
+}
+
+.airtable-iframe{
+	padding:0px 20px;
+}
+.card-link-container{
+	padding: 0 20px 10px;margin-top: -20px;font-size: 15px;
+}
+
+.card-link {
+	color: #556cd6 !important;outline:0 !important;
+}
+
+.header-link {
+	color: #556cd6 !important;outline:0 !important;
+}
+
+.card-arrow{
+	font-size: 2.0em;vertical-align: middle;
+}
+
+.fa{
+    padding: 5px;
+    font-size: 20px;
+    width: 30px;
+    border-radius: 50%;
+    text-decoration: none;
+    text-align:center;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white !important;
+}
+
+/* Twitter */
+.fa-twitter {
+  background: #55ACEE;
+  color: white !important;
+}
+
+/*whatsapp */
+.fa-whatsapp{
+    background: #25D366;
+    color: white !important;
+}
+
+#social-media-btns{
+position: absolute;top: 2em;right: 12.5%;
+}
+
+/*
 .card__container {
 	position: fixed;
 	top: 0;
@@ -28,12 +101,13 @@
 	height: 100%;
 	-webkit-overflow-scrolling: touch;
 }
-
+*/
+/*
 .card__container--closed {
 	position: absolute;
 	overflow: hidden;
 }
-
+*/
 .card__image {
 	position: absolute;
 	top: 0;
@@ -84,10 +158,12 @@
 }
 
 .card__title {
-	font-size: 1.11em;
+	font-size: 0.85rem;
 	line-height: 1.5;
 	margin: 5px 0 0 0;
 	color: #3b393d;
+        font-weight:300 !important;
+        text-align:center;
 }
 
 .card__container--closed .card__title {
@@ -96,7 +172,7 @@
 }
 
 .card__subtitle {
-	font-size: .95em;
+	font-size: .8em;
 	line-height: 1;
 	margin: 5px 0 0;
 	color: #777778;
@@ -158,9 +234,10 @@
 }
 
 @media only screen and (max-width: 980px) {
+	/*	
 	.card {
 		width: 29%;
-		padding-bottom: 32.2%;
+		
 	}
 	.card__content {
 		margin-bottom: 0;
@@ -176,8 +253,8 @@
 		margin-top: -35px;
 	}
 	.card__title {
-	font-size: 1em;
-	}
+	font-size: 0.8rem;
+	}*/
 }
 
 @media only screen and (max-width: 580px) {
@@ -188,26 +265,32 @@
 	}*/
 	.align-inner{
     		width: 90% !important;
-		margin-top: -45px;
+		margin-top: -5px;
 	}
 	.wrapper {
 		width:90% !important;
 		margin-top:-4em !important;	
 	}
 	.card__title {
-	   font-size: 0.90em;
+	   font-size: 0.7rem;
 	}
+
+	#social-media-btns{
+	right: 5%;
+	}
+	.header-link {
+	font-size:14px;
+	}
+	.align-inner-footer{
+    	  width: 90%;
+	}
+
 }
 
 @media only screen and (max-width: 400px) {
 	.card__title {
-	   font-size: 0.68em;
+	   font-size: 0.61rem;
 	}
-	/*
-	.card__caption {
-		font-size: 1.25em;
-		padding: 35px 0px 0px;
-	}*/
 	.meta {
 		padding: 0 0 25px 0;
 	}
@@ -293,7 +376,7 @@ a:focus {
 /* Header */
 
 .header {
-	padding: 2em 1em 9em;
+	padding: 2em 0em 9em;
 	background:white;
 }
 

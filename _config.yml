@@ -1,7 +1,7 @@
 # Site settings
-title: Modern Blog
-description: Modern-Blog A Elegant template for Jekyll
-keywords: Modern, Blogging, Fun
-author: Wferr
+title: Zero To PM
+description: A curated library of 150+ links to product management related resources - articles, videos, twitter threads, webinars etc.
+keywords: Product Management, Roadmaps, Pricing, Product Market Fit, Minimum Viable Product
+author: Akshay Deshmukh
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "" # the base hostname & protocol for your site
