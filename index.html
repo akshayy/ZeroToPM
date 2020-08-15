@@ -19,13 +19,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <meta name="keywords" content="{{ site.keywords }}"/>
     <meta name="author" content="{{ site.author }}"/>
 
-    <meta property="og:url"           content="https://www.your-domain.com/your-page.html" />
+    <meta property="og:url"           content="{{ site.url }}" />
     <meta property="og:type"          content="website" />
     <meta property="og:title"         content="Zero To PM" />
     <meta property="og:description"   content="{{ site.description }}" />
     <meta property="og:image"         content="https://i.imgur.com/ISgjC0p.png" />
 
-    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
     <link rel="stylesheet" type="text/css" href="css/normalize.css"/>
     <link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css"/>
     <link rel="stylesheet" type="text/css" href="css/modern-blog.css"/>
@@ -61,8 +64,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		<i href="#" class="fa fa-lightbulb-o" style="font-size: 1.5em;color: #6c62ff;"></i>
 		<a id="suggest-resource" class="header-link" href="/suggest" target="_blank" style="margin-right: 20px;margin-left: -5px;">Suggest a resource</a>
 
-    		<a id="facebook-share" href="javascript:;" onclick="facebookShare();" class="fa fa-facebook"></a>
-		<a id="twitter-share" href="javascript:;" onclick="twitterShare();" class="fa fa-twitter"></a>
+    		<a id="facebook-share" href="javascript:;" onclick="facebookShare();" class="fa fa-facebook social-media-share"></a>
+		<a id="twitter-share" href="javascript:;" onclick="twitterShare();" class="fa fa-twitter social-media-share"></a>
 	        <!--<a id="whatsapp-share" href="#" class="fa fa-whatsapp"></a>-->
 </div>
     </header>
@@ -186,7 +189,7 @@ A few years ago, when I transitioned into product management, I did not have a c
 <b>Zero To PM</b> is a curated library of 150+ content resources - <u>articles, videos, twitter threads, webinars</u> etc organized by the key topics that make up product management. Zero To PM aims at providing a structure to your pursuit of becoming a better Product Manager. 
 <br>
 <br>
-<a class="card-link" href="https://twitter.com/ak_kshay" target="_blank">Follow me (@ak_kshay) on twitter</a> where I tweet about about insightful nuggets of knowledge derived from these amazing resources.
+<a class="follow-on-twitter" id="twitter-profile" href="https://twitter.com/ak_kshay" target="_blank">Follow me (@ak_kshay) on twitter</a> where I tweet about insightful nuggets of knowledge derived from these amazing resources.
 </div> 
 </div>
     </footer>
@@ -201,18 +204,18 @@ function showAirtable(element){
 $('.airtable-iframe').slideUp();
 if(!$(element).is(':visible')){
 $(element).slideDown();}
-}
+};
 
 facebookShare = function(){
-    url = 'https://work.facebook.com/sharer.php?display=popup&u=' + window.location.href;
+    url = 'https://facebook.com/sharer.php?display=popup&u=' + window.location.href;
     options = 'toolbar=0,status=0,resizable=1,width=626,height=436';
     window.open(url,'sharer',options);
-}
+};
 
 twitterShare = function(){
     url = 'https://twitter.com/intent/tweet?url=https%3A%2F%2Fzerotopm.info&text=To%20all%20the%20product%20enthusiasts%20out%20there%2C%20check%20out%20Zero%20To%20PM%20-%20a%20curated%20library%20of%20150+%20PM%20related%20content%20items%20by%20@ak_kshay&hashtags=prodmgmt%2Cproductmanagers';
     window.open(url); 
-}
+};
 
 </script>
 <!-- JS 

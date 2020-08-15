@@ -4,4 +4,4 @@ description: A curated library of 150+ links to product management related resou
 keywords: Product Management, Roadmaps, Pricing, Product Market Fit, Minimum Viable Product
 author: Akshay Deshmukh
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "" # the base hostname & protocol for your site
+url: "http://zerotopm.info" # the base hostname & protocol for your site

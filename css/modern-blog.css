@@ -40,9 +40,11 @@
 	padding: 0 20px 10px;margin-top: -20px;font-size: 15px;
 }
 
-.card-link {
+.card-link, .follow-on-twitter {
 	color: #556cd6 !important;outline:0 !important;
 }
+
+
 
 .header-link {
 	color: #556cd6 !important;outline:0 !important;
