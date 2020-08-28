@@ -286,6 +286,9 @@ position: absolute;top: 2em;right: 12.5%;
 	.align-inner-footer{
     	  width: 90%;
 	}
+	.card-arrow{
+		display:none;
+	}
 
 }
 
@@ -300,6 +303,10 @@ position: absolute;top: 2em;right: 12.5%;
 		font-size: 90%;
 		padding: 25px 0px 100px;
 	}
+	.card-arrow{
+		display:none;
+	}
+
 }
 
 
