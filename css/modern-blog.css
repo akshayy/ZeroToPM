@@ -89,7 +89,7 @@
 }
 
 #social-media-btns{
-position: absolute;top: 2em;right: 12.5%;
+position: absolute;top: 3em;right: 12.5%;
 }
 
 /*
@@ -385,7 +385,7 @@ a:focus {
 /* Header */
 
 .header {
-	padding: 2em 0em 9em;
+	padding: 3em 0em 9em;
 	background:white;
 }
 
