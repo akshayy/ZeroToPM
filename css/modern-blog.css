@@ -270,8 +270,7 @@ position: absolute;top: 3em;right: 12.5%;
 		margin-top: -5px;
 	}
 	.wrapper {
-		width:90% !important;
-		margin-top:-4em !important;	
+		width:90% !important;	
 	}
 	.card__title {
 	   font-size: 0.7rem;
@@ -421,7 +420,6 @@ a:focus {
 	width: 75%;
 	max-width: 1366px;
 	margin: 0 auto;
-	margin-top: -6em;
 }
 
 @media screen and (max-width: 50em) {

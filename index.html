@@ -47,52 +47,176 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </script>
     <style>
     	.header{
-    		padding: 3em 0em 3em !important;
+    		padding: 3em 0em 1.5em !important;
     		background: white;
-    		margin-bottom: 3em !important;
     	}
     </style>
+    
+    <style>
+
+    	.header {
+    		background-color: inherit;
+    		width: 75%;
+    		z-index: 3;
+    	}
+
+    	.header ul {
+    		margin: 0;
+    		padding: 0;
+    		list-style: none;
+    		overflow: hidden;
+    	}
+
+    	.header li a {
+    		display: block;
+    		padding: 10px 10px;
+    		text-decoration: none;
+    	}
+
+    	.header li a:hover,
+    	.header .menu-btn:hover {
+    		background-color: #f4f4f4;
+    	}
+
+    	.header .logo {
+    		display: block;
+    		float: left;
+    		font-size: 2em;
+    		padding: 10px 20px;
+    		text-decoration: none;
+    	}
+
+    	/* menu */
+
+    	.header .menu {
+    		clear: both;
+    		max-height: 0;
+    		transition: max-height .2s ease-out;
+    	}
+
+    	/* menu icon */
+
+    	.header .menu-icon {
+    		cursor: pointer;
+    		display: inline-block;
+    		float: right;
+    		padding: 28px 20px;
+    		position: relative;
+    		user-select: none;
+    	}
+
+    	.header .menu-icon .navicon {
+    		background: #333;
+    		display: block;
+    		height: 2px;
+    		position: relative;
+    		transition: background .2s ease-out;
+    		width: 18px;
+    	}
+
+    	.header .menu-icon .navicon:before,
+    	.header .menu-icon .navicon:after {
+    		background: #333;
+    		content: '';
+    		display: block;
+    		height: 100%;
+    		position: absolute;
+    		transition: all .2s ease-out;
+    		width: 100%;
+    	}
+
+    	.header .menu-icon .navicon:before {
+    		top: 5px;
+    	}
+
+    	.header .menu-icon .navicon:after {
+    		top: -5px;
+    	}
+
+    	/* menu btn */
+
+    	.header .menu-btn {
+    		display: none;
+    	}
+
+    	.header .menu-btn:checked ~ .menu {
+    		max-height: 240px;
+    	}
+
+    	.header .menu-btn:checked ~ .menu-icon .navicon {
+    		background: transparent;
+    	}
+
+    	.header .menu-btn:checked ~ .menu-icon .navicon:before {
+    		transform: rotate(-45deg);
+    	}
+
+    	.header .menu-btn:checked ~ .menu-icon .navicon:after {
+    		transform: rotate(45deg);
+    	}
+
+    	.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+    	.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+    		top: 0;
+    	}
+
+    	/* 48em = 768px */
+
+    	@media (min-width: 48em) {
+    		.header li {
+    			float: left;
+    		}
+    		.header li a {
+    			padding: 10px 15px;
+    		}
+    		.header .menu {
+    			clear: none;
+    			float: right;
+    			max-height: none;
+    		}
+    		.header .menu-icon {
+    			display: none;
+    		}
+    	}
+
+    </style>
+
+
 </head>
 <body class="body">
 <!-- Google Tag Manager (noscript) -->
 <!--<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WTN2TRH"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>-->
 <!-- End Google Tag Manager (noscript) -->
-
+<header class="header align-inner" style="">
+	<a href="/" style="outline:0!important;"> 
+		<img src="https://i.imgur.com/GGDhY2j.png" style="height: 75px;/* width: 35px; *//* float: left; */margin-right: -80px;">  
+		<span class="hero-subheader__title" style="/* height: 75px; *//* margin-bottom: 0px; */padding-top: 40px;font-size: 2em;/* float: left; */">Zero To PM</span>
+	</a>
+	<input class="menu-btn" type="checkbox" id="menu-btn">
+	<label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+	<ul class="menu" style="/* padding: 10px !important; */">
+		<li><a class="header-link" href="#about-section">About</a></li>
+		<li><a class="header-link" href="/suggest">Suggest a resource</a></li>
+	</ul>
+	<div class="">
+		A curated library of 150+ links to product management related resources - articles, videos, twitter threads, webinars etc.<br>Are you a product enthusiast wanting to get into Product Management or simply need a refresher? This is your place to be...
+	</div>
+</header>
 
 <div id="announcement-bar" style="display:none;text-align: center;padding: 10px;font-size: 14px;width: 100%;position: fixed;background: linear-gradient(to right, #cbf4c9 0%, #cbf4c9 100%);color: #0e6245;">
 <img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/twitter/259/loudspeaker_1f4e2.png" id="announcement-icon" style="height: 15px;margin-right: 10px;"><b>Announcement :</b> I'm writing a short ebook to help product enthusiasts with the foundational knowledge and tips to break into product. <a style="color:#556cd6 !important" href="https://akshayd.in/zero-to-pm-the-book">Know more here.
 </a></div>
 
 <div class="container">
-    <header class="header">
-       <div class="align-inner">
-	  <a href="/" style="outline:0!important;">								
-	  <div style="height: 75px;width: 35px;float: left;">
-	     <img src="https://i.imgur.com/GGDhY2j.png" style="height: 75px;">
-	  </div>
-	  <h1 class="hero-subheader__title" style="height: 75px;margin-bottom: 0px;padding-top: 40px;font-size: 2em;">Zero To PM</h1></a>
-	  <p class="hero-subheader__desc">A curated library of 150+ links to product management related resources - articles, videos, twitter threads, webinars etc.<br>Are you a product enthusiast wanting to get into Product Management or simply need a refresher? This is your place to be... </p>
-	</div>
-	<div id="social-media-btns">
-		<a id="view-about-section" class="header-link" href="#about-section" style="margin-right: 20px;">About</a>
-
-		<i href="#" class="fa fa-lightbulb-o" style="font-size: 1.5em;color: #6c62ff;"></i>
-		<a id="suggest-resource" class="header-link" href="/suggest" target="_blank" style="margin-right: 20px;margin-left: -5px;">Suggest a resource</a>
-
-    		<a id="facebook-share" href="javascript:;" onclick="facebookShare();" class="fa fa-facebook social-media-share"></a>
-		<a id="twitter-share" href="javascript:;" onclick="twitterShare();" class="fa fa-twitter social-media-share"></a>
-	        <!--<a id="whatsapp-share" href="#" class="fa fa-whatsapp"></a>-->
-</div>
-    </header>
     <div class="content">
         <!-- trianglify pattern container -->
         <div class="pattern pattern--hidden"></div>
         <!-- cards -->
         <div class="wrapper">
-		<div class="card" style="background: #cbf4c8;border-radius: 3px;"> 
-			<div class="card-title" style="background:#cbf4c8;padding: 10px 10px;font-size: 16px;">  
-				<span style="color: #605f6e;">  
+		<div class="card" style="background: white;border-radius: 3px;"> 
+			<div class="card-title" style="background:linear-gradient(to right, #4caf5047 0%, #4caf501c 100%);padding: 10px 10px;font-size: 16px;">  
+				<span style="color: #0080009e;"> 
 					<div>Pre-orders for the eBook - <b>Zero To PM : A handy guide for aspring product managers</b> - are now open!
 					</div>
 					<a class="card-link" href="https://zerotopm.info/ebook" target="_blank" style="font-size:15px">Pre-Order Now  </a>
