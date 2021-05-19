@@ -38,49 +38,78 @@
             font-weight: 400 !important;
             text-transform: uppercase;
         }
+
+        .header-link {color:#6c62ff;}
+
+        ul li:before {
+    		content: '' !important;
+		}
+
+         .header { background-color: inherit; z-index: 3; } .header ul { margin: 0; padding: 0; list-style: none; overflow: hidden; } .header li a { display: block; padding: 10px 10px; text-decoration: none; } .header li a:hover, .header .menu-btn:hover { background-color: #f4f4f4; } .header .logo { display: block; float: left; font-size: 2em; padding: 10px 20px; text-decoration: none; } /* menu */ .header .menu { clear: both; max-height: 0; transition: max-height .2s ease-out; } /* menu icon */ .header .menu-icon { cursor: pointer; display: inline-block; float: right; padding: 28px 20px; position: relative; user-select: none; } .header .menu-icon .navicon { background: #333; display: block; height: 2px; position: relative; transition: background .2s ease-out; width: 18px; } .header .menu-icon .navicon:before, .header .menu-icon .navicon:after { background: #333; content: ''; display: block; height: 100%; position: absolute; transition: all .2s ease-out; width: 100%; } .header .menu-icon .navicon:before { top: 5px; } .header .menu-icon .navicon:after { top: -5px; } /* menu btn */ .header .menu-btn { display: none; } .header .menu-btn:checked ~ .menu { max-height: 240px; } .header .menu-btn:checked ~ .menu-icon .navicon { background: transparent; } .header .menu-btn:checked ~ .menu-icon .navicon:before { transform: rotate(-45deg); } .header .menu-btn:checked ~ .menu-icon .navicon:after { transform: rotate(45deg); } .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before, .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after { top: 0; } /* 48em = 768px */ @media (min-width: 48em) { .header li { float: left; } .header li a { padding: 10px 5px; } .header .menu { clear: none; float: right; max-height: none; } .header .menu-icon { display: none; } }
+
     </style>
     <script async src="https://cdn.splitbee.io/sb.js"></script>
 </head>
 <body class="sky">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-2" style="margin-top:15px;">
-            	<a href="/" style="color: #6c62ff;border-bottom: none !important;"><i class="icon icon--arrow-left"></i> 
-            		Home
-            	</a>
-            </div>
-            <div class="col-md-8">
-              
-                <div class="align-center">
+	<div class="container">
+		<div class="row">
 
-                    <h1 class="hero-subheader__title" style="font-family: Ubuntu;">
-                      Zero To PM
-                    </h1>
+			<div class="col-md-2">
 
-                    <p class="hero-subheader__desc" style="font-size: 2em;">
-                        A handy guide for aspiring product managers<br>
-                    </p>
+			</div>
+			<div class="col-md-8">
 
-                    <p class="subtext_2" style="color: #00000099;font-size: 1.2em;">
-                        An eBook with resources to build the foundational knowledge and practical tips to set yourself up for a career in product management
-                    </p>
-                    <p class="subtext_2" style="text-transform: UPPERCASE;color: #00000099;font-size: 1.2em;">
-                        Launching on May 20, 2021 8:00 AM PDT
-                    </p>
-                    <!--<script src="https://gumroad.com/js/gumroad.js"></script>
-                    <a class="gumroad-button" href="https://gumroad.com/l/Pfmmk" target="_blank">Buy my product</a>-->
-                    <a href="https://gum.co/zerotopm" target="_blank" class="btn btn--dark btn--rounded btn--w-icon order-now-link">
-                        <i class="icon icon--arrow-right"></i>Pre-Order Now  <span style="text-decoration: line-through;">$10</span><b>  $5</b>
-                    </a>
-                    <p class="subtext_2" style="color: #00000099;font-size: 0.9em;margin-top: -15px;">
-                        *You will not be charged until May 20, 2021 8:00 AM PDT
-                    </p>
-                </div>
-              
-            </div><!-- /.col -->
+				<div class="">
 
-        </div><!-- /.row -->
-    </div>
+					<div class="row " style="
+					padding-left: 15px;
+					">
+					<a href="/" style="border-bottom: none !important;"><h1 class=" hero-subheader__title" style="font-family: Ubuntu;float: left;">
+						Zero To PM 
+					</h1></a>
+
+					<header class="header" style="">  <input class="menu-btn" type="checkbox" id="menu-btn"> <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label> 
+						<ul class="menu"> 
+							<li>
+								<a class="header-link" href="#content-summary">Content Summary</a>
+							</li>
+
+							<li>
+								<a class="header-link" href="#about-author">About the Author</a>
+							</li> 
+						</ul>  
+					</header>
+
+
+
+
+					</div>
+
+					<p class="hero-subheader__desc" style="font-size: 2em;line-height:1.2em">
+						A handy guide for aspiring product managers<br>
+					</p>
+
+					<p class="subtext_2" style="color: #00000099;font-size: 1.2em;">
+						An eBook with resources to build the foundational knowledge and practical tips to set yourself up for a career in product management
+					</p>
+				</div>
+				<div class="align-center">
+					<p class="subtext_2" style="text-transform: UPPERCASE;color: #00000099;font-size: 1.2em;">
+						Launching on May 20, 2021 8:00 AM PDT
+					</p>
+
+					<a href="https://gum.co/zerotopm" target="_blank" class="btn btn--dark btn--rounded btn--w-icon order-now-link">
+						<i class="icon icon--arrow-right"></i>Pre-Order Now  <span style="text-decoration: line-through;">$10</span><b>  $5</b>
+					</a>
+					<p class="subtext_2" style="color: #00000099;font-size: 0.9em;margin-top: -15px;">
+						*You will not be charged until May 20, 2021 8:00 AM PDT
+					</p>
+				</div>
+
+			</div><!-- /.col -->
+
+		</div><!-- /.row -->
+	</div>
     <div class="container">
         <div class="col-md-2"></div>
         <div class="col-md-8">
@@ -125,7 +154,7 @@
         <div class="row">
             <div class="col-md-2"></div>
             <div class="col-md-8">
-                <div class="align-center">
+                <div class="">
                     <p class="hero-subheader__desc" style="font-size: 2em;">
                         What this book is and is NOT?<br>
                     </p>
@@ -140,7 +169,7 @@
             </div><!-- /.col -->
         </div>
     </div>
-    <div class="container">
+    <div id="content-summary" class="container">
         <div class="col-md-2"></div>
         <div class="col-md-8">
             <div class="row" style="background: white;border-radius: 2px;border: solid 1px #c0d6b6;margin-top: 5px;">
@@ -345,7 +374,7 @@
         <div class="col-md-2"></div>
     </div>
 
-    <div class="container" style="margin-bottom: 40px;">
+    <div id="about-author" class="container" style="margin-bottom: 40px;">
         <div class="col-md-2"></div>
         <div class="col-md-8">
             <div class="row" style="background: white;border-radius: 2px;margin-top: 5px;">
