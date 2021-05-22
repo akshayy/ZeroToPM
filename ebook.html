@@ -45,6 +45,17 @@
     		content: '' !important;
 		}
 
+		.review-text {
+			display: table-cell;
+			color: #000000ad;
+			font-style:italic;
+		}
+
+		.reviewer-name {
+			font-size:14px;
+			font-style:normal;
+		}
+
          .header { background-color: inherit; z-index: 3; } .header ul { margin: 0; padding: 0; list-style: none; overflow: hidden; } .header li a { display: block; padding: 10px 10px; text-decoration: none; } .header li a:hover, .header .menu-btn:hover { background-color: #f4f4f4; } .header .logo { display: block; float: left; font-size: 2em; padding: 10px 20px; text-decoration: none; } /* menu */ .header .menu { clear: both; max-height: 0; transition: max-height .2s ease-out; } /* menu icon */ .header .menu-icon { cursor: pointer; display: inline-block; float: right; padding: 28px 20px; position: relative; user-select: none; } .header .menu-icon .navicon { background: #333; display: block; height: 2px; position: relative; transition: background .2s ease-out; width: 18px; } .header .menu-icon .navicon:before, .header .menu-icon .navicon:after { background: #333; content: ''; display: block; height: 100%; position: absolute; transition: all .2s ease-out; width: 100%; } .header .menu-icon .navicon:before { top: 5px; } .header .menu-icon .navicon:after { top: -5px; } /* menu btn */ .header .menu-btn { display: none; } .header .menu-btn:checked ~ .menu { max-height: 240px; } .header .menu-btn:checked ~ .menu-icon .navicon { background: transparent; } .header .menu-btn:checked ~ .menu-icon .navicon:before { transform: rotate(-45deg); } .header .menu-btn:checked ~ .menu-icon .navicon:after { transform: rotate(45deg); } .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before, .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after { top: 0; } /* 48em = 768px */ @media (min-width: 48em) { .header li { float: left; } .header li a { padding: 10px 5px; } .header .menu { clear: none; float: right; max-height: none; } .header .menu-icon { display: none; } }
 
     </style>
@@ -72,6 +83,10 @@
 						<ul class="menu"> 
 							<li>
 								<a class="header-link" href="#content-summary">Content Summary</a>
+							</li>
+
+							<li>
+								<a class="header-link" href="#reviews">Reviews</a>
 							</li>
 
 							<li>
@@ -269,89 +284,64 @@
             </div> 
         </div><div class="col-md-2"></div>
     </div>
-    <div class="container" style="display:none;">
+    <div class="container" id="reviews" style="">
         <div class="col-md-2"></div>
         <div class="col-md-8">    
             <div class="align-center">
                 <p class="hero-subheader__desc" style="font-size: 2em;">
-                    What people are saying about this book?<br>
+                    What readers are saying about this book?<br>
                 </p>
             </div>
         </div>
     </div>
-    <div class="container" style="margin-top:0px; display: none;">
+    <div class="container" style="margin-top:0px;">
         <div class="col-md-2"></div>
         <div class="col-md-8">
             <div class="row" style="border-radius: 2px;">
-                <div class="col-md-6" style="margin-top: 30px;">
+            	<div class="col-md-6" style="margin-top: 30px;">
                     <div class="row" style="margin-left: 0px;margin-right: 0px;padding: 10px 0px 10px 10px;background: white;border-radius: 3px;">
-                        <img src="https://pbs.twimg.com/profile_images/1317135273201864706/VQhTq2jK_normal.jpg" style="width: 50px;float: left;margin-right: 10px;border-radius: 50%;">
-                        <div style="display: table-cell;color: #000000ad;">
-                            "Product enthusiasts who want to break into product management but are still on the fence because of no clear direction"
-                            <br>
-                            <div style="font-size: 14px;">- 
-                                <span style="color: black;">    AKSHAY DESHMUKH
-                                </span><br> 
-                                <span style="color: #837e7e;font-size: 13px;">PRODUCT MANAGER, ZINRELO</span>
+                        <div class="review-text">"If you have been looking for a 'Demystifying Product Management' guide minus the jargon and frills, your search ends here. 4 hours well spent!"<br>
+                            <div class="reviewer-name">- 
+                                <span style="color: black;">DIMPLE SHAH</span><br> 
+                                <span style="color: #837e7e;font-size: 13px;">TECHNICAL PROGRAM MANAGER, FACEBOOK</span>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6" style="margin-top: 30px;">
                     <div class="row" style="margin-left: 0px;margin-right: 0px;padding: 10px 0px 10px 10px;background: white;border-radius: 3px;">
-                        <img src="https://pbs.twimg.com/profile_images/1317135273201864706/VQhTq2jK_normal.jpg" style="width: 50px;float: left;margin-right: 10px;border-radius: 50%;">
-                        <div style="display: table-cell;color: #000000ad;">
-                            "Product enthusiasts who want to break into product management but are still on the fence because of no clear direction"
-                            <br>
-                            <div style="font-size: 14px;">- 
-                                <span style="color: black;">    AKSHAY DESHMUKH
-                                </span><br> 
-                                <span style="color: #837e7e;font-size: 13px;">PRODUCT MANAGER, ZINRELO</span>
+                        <div class="review-text">"Very well written and easy to follow. This book hits the goal of providing an overview for those looking to break into product management role."<br>
+                            <div class="reviewer-name">- 
+                                <span style="color: black;">RONO JACOB</span><br> 
+                                <span style="color: #837e7e;font-size: 13px;">DIRECTOR OF PRODUCT MANAGEMENT, DRUVA</span>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6" style="margin-top: 30px;">
                     <div class="row" style="margin-left: 0px;margin-right: 0px;padding: 10px 0px 10px 10px;background: white;border-radius: 3px;">
-                        <img src="https://pbs.twimg.com/profile_images/1317135273201864706/VQhTq2jK_normal.jpg" style="width: 50px;float: left;margin-right: 10px;border-radius: 50%;">
-                        <div style="display: table-cell;color: #000000ad;">
-                            "Product enthusiasts who want to break into product management but are still on the fence because of no clear direction"
-                            <br>
-                            <div style="font-size: 14px;">- 
-                                <span style="color: black;">    AKSHAY DESHMUKH
-                                </span><br> 
-                                <span style="color: #837e7e;font-size: 13px;">PRODUCT MANAGER, ZINRELO</span>
+                        <div class="review-text">"A must read for anyone planning to transition into product management. Very useful content with practical suggestions to land a PM role. Very well written."<br>
+                            <div class="reviewer-name">- 
+                                <span style="color: black;">ANUKESH NEVATIA</span><br> 
+                                <span style="color: #837e7e;font-size: 13px;">PRODUCT MANAGER, ZSCALER</span>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6" style="margin-top: 30px;">
                     <div class="row" style="margin-left: 0px;margin-right: 0px;padding: 10px 0px 10px 10px;background: white;border-radius: 3px;">
-                        <img src="https://pbs.twimg.com/profile_images/1317135273201864706/VQhTq2jK_normal.jpg" style="width: 50px;float: left;margin-right: 10px;border-radius: 50%;">
-                        <div style="display: table-cell;color: #000000ad;">
-                            "Product enthusiasts who want to break into product management but are still on the fence because of no clear direction"
-                            <br>
-                            <div style="font-size: 14px;">- 
-                                <span style="color: black;">    AKSHAY DESHMUKH
-                                </span><br> 
-                                <span style="color: #837e7e;font-size: 13px;">PRODUCT MANAGER, ZINRELO</span>
+                        <div class="review-text">"Precise and insightful. Definitely recommended for anyone who is starting and (i) doesn't know where to start (ii) is trapped in Medium/Substack articles loop."<br>
+                            <div class="reviewer-name">- 
+                                <span style="color: black;">SAURAV KARMAKAR</span><br> 
+                                <span style="color: #837e7e;font-size: 13px;">PRODUCT ENTHUSIAST, BIT MESRA'22</span>
                             </div>
                         </div>
                     </div>
                 </div>
+                
+                
+                
             </div>
-
-            <div class="row" style="text-align: center;margin-top: 30px;">
-
-                <a href="https://gum.co/zerotopm" target="_blank" class="btn btn--dark btn--rounded btn--w-icon order-now-link" style="">
-                    <i class="icon icon--arrow-right"></i>
-                    Pre-Order Now  <span style="text-decoration: line-through;">$10</span><b>  $5</b>
-                </a>
-                <p class="subtext_2" style="display:none;color: #00000099;font-size: 0.9em;margin-top: -15px;">
-                        *You will not be charged until May 20, 2021 8:00 AM PDT
-                    </p>
-            </div>
-
         </div>
         <div class="col-md-2"></div>
     </div>
